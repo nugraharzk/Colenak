@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "882521615153",
+    "project_id": "firebase-colenak"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882521615153:android:607f89dae0e56ba6",
+        "android_client_info": {
+          "package_name": "com.example.rizki.talentbdgproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882521615153-h5ve7b69n7q3d2cc4be0so14u62qkgpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rizki.talentbdgproject",
+            "certificate_hash": "80ca00f827d9c9592a92a7413e4a35b1b48a7a7b"
+          }
+        },
+        {
+          "client_id": "882521615153-e1cthru1gp8ltg7o6hh1ki7hbltpipn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEc16iat0JuxWmhJCRwnSZKNxf2Pv3GNc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

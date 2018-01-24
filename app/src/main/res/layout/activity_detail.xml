@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkwhite"
+    tools:context="com.example.rizki.talentbdgproject.activity.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/titleToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:text="@string/nama"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/profile2"
+                android:src="@drawable/foto"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/maps"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvJudul"
+                android:layout_centerHorizontal="true"
+                android:text="@string/galeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_below="@+id/tvJudul"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pager"
+                android:paddingTop="20dp"
+                android:text="@string/nama" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNama"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:text="@string/nama" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isiNama"
+                android:text="@string/lokasi" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLokasi"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:text="@string/lokasi" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isiLokasi"
+                android:text="@string/telp" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTelp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:text="@string/telp" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isiTelp"
+                android:text="@string/jam" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJam"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:text="@string/jam" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isiJam"
+                android:text="@string/harga" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHarga"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:text="@string/harga" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isiHarga"
+                android:text="@string/deskripsi" />
+
+            <com.example.rizki.talentbdgproject.classes.CustomTextView
+                android:id="@+id/isiDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDeskripsi"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/deskripsi" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/maps"
+        android:text="@string/maps"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
